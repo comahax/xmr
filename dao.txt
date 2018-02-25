@@ -1,0 +1,9 @@
+#!/usr/bin/expect
+spawn sudo apt install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev -y
+expect "[default=N]"
+send "\r"
+expect "<Ok>"
+send "\r"
+expect "ssh"
+send "\r"
+
